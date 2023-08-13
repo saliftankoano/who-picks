@@ -12,12 +12,12 @@ p2.innerHTML= player2;
 function rollDice(){
     var randomNumber1 = Math.floor(Math.random()*6) +1;
     console.log(randomNumber1);
-    var randomImage1 = "./images/dice"+randomNumber1+".png";
+    var randomImage1 = "./dice"+randomNumber1+".png";
     var img1 = document.querySelectorAll("img")[0].src= randomImage1;
 
     var randomNumber2 = Math.floor(Math.random()*6) +1;
     console.log(randomNumber2);
-    var randomImage2 = "./images/dice"+randomNumber2+".png";
+    var randomImage2 = "./dice"+randomNumber2+".png";
     var img2 = document.querySelectorAll("img")[1].src= randomImage2;
     var h1 = document.querySelector("h1");
 
@@ -28,7 +28,7 @@ function rollDice(){
         h1.textContent= "🥳 "+name1+" Wins !";
     }
     else if (randomNumber2 > randomNumber1){
-        h1.textContent= name2+" Wins ! 🥳";
+        h1.textContent= name2+" Wins! 🥳";
     }
     else{
         h1.textContent= "😲 Draw 😲";
